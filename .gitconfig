@@ -1,0 +1,12 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = nzmedet
+	email = nzmedet@gmail.com
+[core]
+	excludesfile = /Users/medet/.gitignore_global
+[init]
+	defaultBranch = main
